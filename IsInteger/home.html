@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Check if a number is an integer using a function in JavaScript</p>
+    <script>
+
+        console.log("Number.isInteger(12) "+Number.isInteger(12))
+        console.log("Number.isInteger(12.78) "+Number.isInteger(12.78))
+        console.log("Number.isInteger(true) "+Number.isInteger(true))
+        console.log(`Number.isInteger("45") `+Number.isInteger("45"))
+
+        console.log("isIntegercheck(15) "+isIntegercheck(15))
+        console.log("isIntegercheck(15.98) "+isIntegercheck(15.98))
+        console.log("isIntegercheck(true) "+isIntegercheck(true))
+        console.log('isIntegercheck("56") '+isIntegercheck("56"))
+
+        function isIntegercheck(num)
+        {
+            return num===Math.floor(num);
+        }
+    </script>
+</body>
+</html>
